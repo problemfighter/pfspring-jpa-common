@@ -9,18 +9,18 @@ public abstract class EntityCommon {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    public Long id;
 
     @Temporal(value = TemporalType.TIMESTAMP)
-    private Date created;
+    public Date created;
 
     @Temporal(value = TemporalType.TIMESTAMP)
-    private Date lastUpdated;
+    public Date lastUpdated;
 
     @Column(unique = true)
-    private String uuid;
+    public String uuid;
 
-    private Boolean isDeleted = false;
+    public Boolean isDeleted = false;
 
     @PrePersist
     private void onBasePersist() {
