@@ -21,23 +21,4 @@ public class DTOCommon {
     @JsonIgnore
     public Date lastUpdated;
 
-    @JsonProperty
-    public Long getId() {
-        return id;
-    }
-
-    @JsonProperty
-    public String getUuid() {
-        return uuid;
-    }
-
-    @JsonProperty
-    public Date getCreated() {
-        return created;
-    }
-
-    @JsonProperty
-    public Date getLastUpdated() {
-        return lastUpdated;
-    }
 }
